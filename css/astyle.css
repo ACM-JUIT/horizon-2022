@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+#a-track-text:hover {
+  color: grey;
+}
+#tracks-text1:hover {
+  color: grey;
+}
+
+#a-prizepool {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#tracks-text-cont {
+  padding: 1em;
+  font-size: 2vw;
+}
+
+#a-prizepool-text {
+  text-align: center;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4vw;
+  color: #ffffff;
+}
+#a-1-prize {
+  text-align: center;
+}
+
+#a-track-image {
+  width: 85%;
+  height: 85%;
+  position: relative;
+}
+
+#bdab-prize {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+  text-align: center;
+  color: #ffffff;
+}
+
+.tracks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100vw;
+  min-height: 100vh; 
+  padding-bottom: 3em;
+}
+.hr-track{
+  display:flex;
+  justify-content: inherit;
+  flex-wrap: wrap;
+  gap: 3em 2em;
+}
+
+.hr-track div{
+  flex-basis: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em 0;
+}
+.hr-track img{
+  width: 100px;
+}
+#hr-track-text{
+  font-size: 1.5em;
+}
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1450px) {
+  #a-prize-animation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #tracks-text-cont {
+    padding: 1em;
+    font-size: 3vw;
+  }
+  #a-prizepool-text {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    color: #ffffff;
+  }
+  #a-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #a-prizepool-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10em;
+    width: 100vw;
+  }
+  #a-prizepool {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  #a-prize {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vw;
+    margin: 0.3em;
+    color: #ffffff;
+  }
+  #a-1-prize {
+    text-align: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7vw;
+    padding: 0em 1em 3em 1em;
+    color: #ffffff;
+  }
+
+  #tracks-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10vh;
+    padding-left: 5vw;
+    padding-top: 5vh;
+  }
+
+  #tracks-text {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4rem;
+    color: #ffffff;
+  }
+  #a-board1 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-image: url("../img/wooden.png");
+    background-repeat: no-repeat;
+    padding: 2.5em;
+    height: 100%;
+    margin-right: 10vw;
+    border-radius: 1em;
+    background-size: cover;
+  }
+  #a-board2 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-image: url("../img/wooden.png");
+    background-repeat: no-repeat;
+    padding: 2.5em;
+    height: 100%;
+    border-radius: 1em;
+    margin-right: 2vw;
+    background-size: cover;
+  }
+  #a-track-text {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #tracks {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 6vh;
+    width: 100%;
+    height: 150vh;
+  }
+  #a-text-container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  #a-text-container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 20vh;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  #a-prize-animation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 7vh;
+  }
+  #tracks-text1 {
+    font-size: 2vw;
+  }
+  #tracks-text-cont {
+    padding: 1em 0em 1em 6em;
+  }
+  #a-prizepool-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 18vh;
+  }
+  #a-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+    width: 100%;
+  }
+  #a-prize {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4vw;
+    margin: 0.5em;
+    color: #ffffff;
+  }
+
+  #a-1-prize {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vw;
+
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    color: #ffffff;
+  }
+
+  #a-join {
+    margin-top: -20vh;
+  }
+
+  #tracks-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 10vh;
+    padding-left: 5vw;
+  }
+  #tracks-text1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8vw;
+    color: #ffffff;
+  }
+
+  #tracks-text {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vw;
+    color: #ffffff;
+  }
+
+  #a-track-text {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5vw;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #tracks {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/bg3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 20vh;
+    width: 100%;
+    height: 150vh;
+  }
+  #a-text-container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 40vw;
+  }
+
+  #a-text-container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 2vw;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #ac281e;
+}
+
+.content {
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%;
+  }
+  .popup {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #tracks-text-cont {
+    padding: 0em;
+    font-size: 3vh;
+  }
+  #a-prize-animation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #a-1-prize {
+    font-size: 7vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    padding: 0em 2em 6em 2em;
+    /* margin-bottom: 3.5em !important; */
+  }
+  #bdab-prize {
+    text-align: center;
+    font-size: 2vh;
+  }
+
+  #a-prizepool-text {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    color: #ffffff;
+  }
+  #a-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10vh;
+  }
+  #a-prizepool-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20vh;
+  }
+  #a-prizepool {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  #a-prize {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vw;
+    margin: 0.5em;
+    color: #ffffff;
+  }
+
+  #tracks-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-self: center;
+    padding-bottom: 10vh;
+    padding-top: 5vh;
+  }
+
+  #tracks-text {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    color: #ffffff;
+  }
+  #tracks-text1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  #a-board1 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-image: url("../img/wooden.png");
+    background-repeat: no-repeat;
+    padding: 2em;
+    height: 100%;
+    margin: 1em;
+    border-radius: 1em;
+  }
+  #a-board2 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-image: url("../img/wooden.png");
+    background-repeat: no-repeat;
+    padding: 2.5em;
+    height: 100%;
+    border-radius: 1em;
+  }
+  #a-track-text {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #tracks {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 10vh;
+    width: 100%;
+    height: 150vh;
+  }
+  #a-text-container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #a-text-container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20vh;
+  }
+}
+
