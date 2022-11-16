@@ -1,6 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap%27");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /*===== VARIABLES CSS =====*/
 
@@ -18,7 +19,7 @@ html {
     --text-color: #ffffff;
     --body-color: #F5FFFE;
     /*========== Font and typography ==========*/
-    --body-font: 'Ubuntu', sans-serif;
+    --body-font: 'Poppins', sans-serif;
     --biggest-font-size: 7.5rem;
     --beechkafont: 5rem;
     --big-font-size: 2.25rem;
@@ -35,8 +36,8 @@ html {
 /*========== BASE ==========*/
 
 *,
- ::before,
- ::after {
+::before,
+::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -103,12 +104,13 @@ img {
 /*========== NAV ==========*/
 
 @media screen and (max-width: 768px) {
-     :root {
+    :root {
         --biggest-font-size: 4rem;
         --beechkafont: 3rem;
         --big-font-size: 1.5rem;
         --normal-font-size: 1rem;
     }
+
     .nav__menu {
         position: fixed;
         top: -100%;
@@ -122,20 +124,24 @@ img {
         border-radius: 1rem;
         transition: .6s;
     }
+
     .hide {
         display: none;
     }
-    .hamburger{
+
+    .hamburger {
         font-size: 2.5rem;
 
     }
-    .cross{
+
+    .cross {
         position: fixed;
         width: 100%;
         right: 0;
         left: 34px;
         margin-top: 31px;
     }
+
     .bx-menu:before {
         content: "\edc2";
         font-size: 2.5rem;
@@ -171,6 +177,12 @@ img {
 
 .nav__item {
     margin-bottom: 1.5rem;
+    height: 3.5vh;
+}
+
+.nav__item:hover {
+    border-bottom: 2px solid white;
+    /* text-decoration: underline; */
 }
 
 .nav__toggle {
@@ -199,6 +211,7 @@ img {
         margin-top: 1rem;
         margin-left: -1rem;
     }
+
     .register-btn {
         color: white;
     }
@@ -241,7 +254,7 @@ img {
 .v__data {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -377,53 +390,67 @@ img {
     .nav {
         height: calc(var(--header-height) + 1.5rem);
     }
+
     .nav__list {
         display: flex;
     }
+
     .nav__item {
         margin-right: 2rem;
         margin-bottom: 0;
     }
+
     .nav__link {
         color: var(--body-color);
     }
+
     .nav__toggle {
         display: none;
     }
+
     .v__container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .v__description {
         padding-right: 5rem;
         margin-bottom: 2rem;
     }
+
     .v__video {
         justify-content: center;
         align-items: center;
         padding: 0;
     }
+
     .v__video-icon {
         font-size: 3rem;
     }
+
     .v__popup-video {
         width: 500px;
         height: 250px;
     }
+
     .v__popup-close {
         font-size: 1.5rem;
     }
+
     .controls {
         padding: .5rem;
         border-radius: 1.25rem;
     }
+
     .controls__container {
         column-gap: 1.5rem;
     }
+
     .controls__img {
         width: 45px;
         height: 45px;
         border-radius: .75rem;
     }
+
     .swiper-slide-thumb-active {
         width: 55px;
         height: 55px;
@@ -435,6 +462,7 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
+
     .v__description {
         padding-right: 2rem;
     }
@@ -452,7 +480,13 @@ img {
 .container {
     color: #333;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
     text-align: center;
+}
+
+.data__landing {
+    margin: 10rem 0rem 0 37rem;
 }
 
 
@@ -460,11 +494,11 @@ img {
   border-bottom: 2px solid white;
 } */
 
-#countdown > ul{
+#countdown>ul {
     display: flex;
 }
 
-.vs-col{
+.vs-col {
     font-size: 6em;
     color: white;
 }
@@ -480,8 +514,21 @@ img {
 
 .vs-c span {
     display: block;
-    font-size: 4.5rem;
+    font-size: 5.5rem;
 }
+
+.devfolio__button {
+    height: 4vh;
+    width: 20vw;
+    background-color: #fff;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+/* .devfolio__img {
+} */
+
+/* .devfolio__button:hover {} */
 
 .emoji {
     display: none;
@@ -494,26 +541,29 @@ img {
 }
 
 @media all and (max-width: 768px) {
-    .vs-col{
+    .vs-col {
         padding-top: 0.25em;
         font-size: 2.5rem;
         color: white;
     }
+
     .vs-c {
         font-size: 0.7rem;
         padding: .75rem;
     }
+
     .vs-c span {
         font-size: 3.375rem;
     }
 }
 
 @media screen and (min-width: 1024px) {
-     :root {
+    :root {
         --biggest-font-size: 8.5rem;
         --big-font-size: 1.5rem;
         --normal-font-size: 1rem;
     }
+
     .v__title {
         font-size: 8.5rem;
     }
@@ -599,7 +649,8 @@ a[href^="tel"] {
     color: inherit;
     text-decoration: none;
 }
-a{ 
+
+a {
     color: inherit;
     text-decoration: none;
 }
@@ -612,37 +663,46 @@ a{
     .visit-child {
         font-size: 1rem;
     }
+
     .vist__hr {
         width: 8rem;
         size: 0;
     }
+
     .contact__title {
         margin-top: 4rem;
     }
+
     .contactus {
         margin-left: 1rem;
         width: 88vw;
     }
+
     .copyright {
         font-size: 0.9rem;
         max-width: 100%;
         align-self: flex-start;
     }
+
     .ph_item {
         font-size: 1rem;
         max-width: 100%;
     }
+
     .social_icons {
         align-self: flex-start;
         padding: 11px 0px 25px 0px;
     }
+
     .si {
         margin-top: 1rem;
         font-size: 2rem;
     }
+
     .second_bg {
         object-position: 69%;
     }
+
     .vs-c span {
         font-size: 2.5rem;
     }
