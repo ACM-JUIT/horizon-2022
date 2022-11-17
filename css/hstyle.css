@@ -109,6 +109,7 @@
     width: 100vw;
     background-repeat: no-repeat;
     min-height: 100vh;
+    background-size: cover;
 }
 
 #h-sponsors h1 {
@@ -116,7 +117,9 @@
     font-size: 3em;
     padding: 1em 0 1em 0;
 }
-
+.newspor{
+    background-color: #010F0E;
+}
 .row {
     display: flex;
     flex-flow: wrap;
