@@ -584,6 +584,8 @@ img {
     font-size: var(--beechkafont);
     font-weight: 10;
     margin-top: 7rem;
+    border-bottom: 2px solid white;
+    width: 40%;
 }
 
 .copyright {
@@ -619,6 +621,11 @@ img {
 
 .visit-child {
     font-size: 1.3rem;
+}
+
+.v1 {
+    border-bottom: 1px solid white;
+    width: 60%;
 }
 
 .cs_btn {
