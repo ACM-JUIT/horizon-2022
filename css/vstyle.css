@@ -469,11 +469,6 @@ img {
 
 /* For tall screens on mobiles y desktop*/
 
-@media screen and (min-height: 721px) {
-    .v {
-        height: 640px;
-    }
-}
 
 .container {
     color: #333;
@@ -486,6 +481,19 @@ img {
 .data__landing {
     margin: 10rem 0rem 0 37rem;
 }
+
+@media screen and (min-height: 721px) {
+    .v {
+        height: 640px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .data__landing {
+        margin: 0rem 0rem 0 0rem;
+    }
+}
+
 
 
 /* .v__container{
