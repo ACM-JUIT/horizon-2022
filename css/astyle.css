@@ -30,6 +30,60 @@ body {
   font-size: 2vw;
 }
 
+
+.rupees_prize{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  font-size: 3rem;
+  margin-right: 20rem;
+  margin-left: 20rem;
+  position: absolute;
+}
+
+
+.assured_goodies_perks{
+  display: flex;
+  flex-direction: column;
+  margin-top: -10rem;
+}
+
+.assured_goodies{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.prize-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+.image_pond{
+  position: relative;
+  margin-top: 10rem;
+}
+
+.rupees_prize_one{
+  margin-top: 10rem;
+  font-size: 4rem;
+}
+
+.rupees_prize_two{
+font-size: 5rem;
+}
+
+.rupees_prize_three{
+  margin-top: 10rem;
+}
+
+
 #a-prizepool-text {
   text-align: center;
   font-family: Ubuntu;

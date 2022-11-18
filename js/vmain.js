@@ -47,18 +47,13 @@ const showMenu = (nav, butOne, butTwo, toggle, body) => {
     x = setInterval(function () {
       let now = new Date().getTime(),
         distance = countDown - now;
-        console.log("distance"+distance);
         if(distance>0)
         {let hourL  =(distance % day) / hour;
         hourL=Math.floor(hourL);
         let dayL=Math.floor(distance / day);
         let minuteL=Math.floor((distance % hour) / minute);
         let secondL=Math.floor((distance % minute) / second);
-        // if((hourL/10)<1){hourL="0"+hourL}
-        // if((dayL/10)<1){dayL="0"+dayL}
-        // if((minuteL/10)<1){minuteL="0"+minuteL}
-        // if((secondL/10)<1){secondL="0"+secondL}
-        // console.log(secondL);
+      
         (document.getElementById("days").innerText = dayL),
         (document.getElementById("hours").innerText = hourL),
         (document.getElementById("minutes").innerText = Math.floor(
@@ -70,7 +65,6 @@ const showMenu = (nav, butOne, butTwo, toggle, body) => {
         }
       //do something later when date is reached
       if (distance < 0) {
-        console.log("Hello");
         let countdown = document.getElementById("countdown"),
           content = document.getElementById("content");
   
