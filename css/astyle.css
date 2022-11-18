@@ -63,13 +63,11 @@ body {
   justify-content: space-evenly;
   width: 100vw;
   min-height: 100vh; 
-  padding-bottom: 3em;
-  background-color: #010F0E;
-  /* background-size: 55%;  */
-  background-size: 100vw 110vh;
+  padding-bottom: 5em;
   background-repeat:no-repeat;
-  /* background-size: cover; */
+  background-size: cover; 
 }
+
 .hr-track{
   display: flex;
   justify-content: space-around;
@@ -118,6 +116,7 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
 
 @media screen and (max-width: 1450px) {
   #a-prize-animation {
@@ -405,6 +404,14 @@ body {
   color: black;
 }
 
+
+.meow{
+  width: 100vw;
+  min-height: 100vh; 
+  padding-bottom: 3em;
+  background-size: cover;
+  background-position: bottom;
+}
 @media screen and (max-width: 700px) {
   .box {
     width: 70%;
