@@ -1,7 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap%27");
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /*===== VARIABLES CSS =====*/
 
@@ -233,7 +233,6 @@ img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    object-position: top;
 }
 
 .v__container {
@@ -260,11 +259,11 @@ img {
 
 .v__title {
     font-size: var(--biggest-font-size);
-    font-weight: 10;
+    font-weight: bold;
 }
 
 .v__description {
-    margin-bottom: 1rem;
+    margin-top: -1.5rem;
     font-size: var(--big-font-size);
 }
 
@@ -414,7 +413,6 @@ img {
 
     .v__description {
         padding-right: 5rem;
-        margin-bottom: 2rem;
     }
 
     .v__video {
@@ -503,18 +501,23 @@ img {
     color: white;
 }
 
+.vs-col>p {
+    margin-top: -1rem;
+}
+
 .vs-c {
     display: inline-block;
     color: white;
     font-size: 1em;
+    font-weight: var(--font-semi-bold);
     list-style-type: none;
-    padding: 1em;
+    padding: 0.5rem 1rem;
     text-transform: uppercase;
 }
 
 .vs-c span {
     display: block;
-    font-size: 5.5rem;
+    font-size: 4.5rem;
 }
 
 .devfolio__button {
