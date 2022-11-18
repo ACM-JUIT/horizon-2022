@@ -21,6 +21,7 @@
     width: 100%;
     background-repeat: no-repeat;
     color: white;
+    background-size: cover;
 }
 
 .h-container {
