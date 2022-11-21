@@ -464,7 +464,7 @@ font-size: 5rem;
   min-height: 100vh; 
   padding-bottom: 3em;
   background-size: cover;
-  background-position: bottom;
+  /* background-position: bottom; */
 }
 @media screen and (max-width: 700px) {
   .box {
